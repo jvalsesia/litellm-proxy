@@ -38,3 +38,12 @@ model_list:
 router_settings:
   routing_strategy: simple-shuffle # Helpful if you add multiple keys/deployments later
 
+litellm_settings:
+  cache: true
+
+cache_params:
+  type: redis
+  host: "os.environ/REDIS_HOST"
+  port: "os.environ/REDIS_PORT"
+  password: "os.environ/REDIS_PASSWORD"
+
